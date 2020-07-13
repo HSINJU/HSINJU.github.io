@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body style=" text-align : center">
+
+<h2 >EdiLife Prod Release Note</h2>
+
+<table align="center">
+  <tr>
+    <th>EdiLife</th>
+    <th>3.1.4.0707(20200707)</th>
+    <th><a class="button button-primary" href="itms-services://?action=download-manifest&url=https://dl.dropbox.com/s/mxlble2ucv1qjwl/manifest.plist">Download APP</a></th>
+  </tr>
+  </table>
+  <table align="center">
+  <tr>
+    <th style=" text-align : center">Support model:<p/>
+        Plug model<p/>
+            1. Support SP-1101W<p/>
+            2. Support SP-2101W<p/><p/>
+
+        IPCam model<p/><p/>
+            1. IC-3140W<p/>
+            2. IC-3210W<p/>
+            3. IC-5150W<p/>
+            4. IC-5160GC<p/>
+            5. IC-5170SC<p/>
+            6. IC-6220DC<p/>
+            7. IC-6230DC<p/>
+            8. IC-7112<p/>
+            9. IC-7113<p/>
+            10. IC-9110W<p/>
+            11. IC-9110W V2<p/>
+            12. IC-3116W<p/>
+    </th>
+  </tr>
+  <tr>
+     <td>
+      <font style="color:gray"><P align="center">======== v3.1.4     Cindy        07/7/2020 ========</P> </font> <p/>
+      1. 修正provision流程<p/>
+    2. 修正Smart Rule在LAN環境下,有機率性出現"事件裝置不在區域網路內"<p/>
+     </td>
+  </tr>
+  <tr>
+    <td>
+    <font style="color:gray"><P align="center">======== v3.1.3                  15/7/2019 ========</P> </font> <p/>
+    3.1.0d<p/><p/>
+
+1.fix S2 bug , push number開啟app後，沒點DUT，會自動歸零。<p/><p/>
+
+2.fix S2 bug , 登入dropbox或google drive，將其開關開啟，未關閉情況下，直接按下下方登出；下次重新登入，開關還是開啟狀態，登出後未自動關閉。(Android會)<p/><p/>
+
+3.fix S2 bug , smart rule步驟二，排列與Android不一致(左邊圖為Android，右邊圖為iOS)(參考圖示No5所示)，請確認統一。<p/><p/>
+
+4.fix S2 bug , device name不能輸入特殊符號，例如：-_等等，但Android可以，請確認統一。<p/><p/>
+
+5.fix S3 bug , 變換Cam List順序時，會亂掉。(重新一開APP時候會而已)<p/><p/>
+
+6.fix S3 bug , 6220、6230為配對camera，在Cam List中，6220、6230DUT不應有截圖。<p/><p/>
+
+
+————————————————————————————<p/><p/>
+
+3.1.0c<p/><p/>
+
+fix TS report bug(item:98-100)<p/><p/>
+
+98:功能定義在有smart rule功能的名稱顯示為非預設名稱(非IC-MAC名稱)，但Android上於smart rule功能<p/>
+的名稱確顯示預設名稱。(iOS與Android此行為不同，請於與一致。)<p/><p/>
+
+99:Resolution變更為720P時，device settings/motion detection button會disable顯示\\\\\\\\\\\\\\\"Notice - Motion
+detection is not available for 720P mode\\\\\\\\\\\\\\\"訊息。<p/><p/>
+
+100:變更其它解晰後畫面有變更過，但最後解晰顯示都只顯示720P、Information icon也顯示720P，且再第2次變更就會失敗無法變更。<p/><p/>
+
+————————————————————————————<p/><p/>
+
+3.1.0b<p/><p/>
+
+1.Support 3116W<p/><p/>
+
+2.fix S2 bug , 在mail setting設定時，<p/>
+2-1.點選yahoo，若客戶帳號沒有.tw，在設定時去掉，完成設定回原畫面後，.tw還在；但去檢查手動設定裡的內容，是改過的設定。<p/><p/>
+               
+2-2.點選outlook，若客戶帳號改成hotmail，完成設定回原畫面後，還是outlook；但去檢查手動設定裡的內容，是改過的設定。<p/><p/>
+
+3.fix S2 bug , IC-7113W Environment Sensor沒有email開關，Android有，且與Email Account分開連動的。<p/><p/>
+
+4.fix S2 bug , 若手機，一般設定裡的，麥克風及相簿，不允許被APP使用時，Live streaming的snapshot及microphone按了沒反應，應該要跳出警告訊息，提醒消費者。<p/><p/>
+
+
+————————————————————————————<p/><p/>
+
+3.0.0d<p/><p/>
+
+1.Modify ap mode login password error  <p/><p/>
+
+2.Add share function<p/>
+3.Fix ts bug<p/><p/>
+
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝  EdiLife ＝＝＝＝＝＝＝＝＝＝＝＝＝＝<p/><p/>
+
+3.0.0e<p/><p/>
+
+1.Change auth new api Appauth for google drive<p/><p/>
+
+————————————————————————————<p/><p/>
+
+3.0.0d<p/><p/>
+
+1.Modify ap mode login password error  <p/><p/>
+
+2.Add share function<p/>
+3.Fix ts bug<p/><p/>
+
+————————————————————————————<p/><p/>
+
+3.0.0c<p/><p/>
+
+1.New life api<p/><p/>
+
+2.Add pod 'MQTTClient'<p/><p/>
+      
+pod 'Parse'<p/><p/>
+
+3.Add ＱＲcode <p/><p/>
+
+4.Fix ts bug<p/><p/>
+
+————————————————————————————<p/><p/>
+
+3.0.0b<p/><p/>
+
+1.Modify smart rul <p/><p/>
+
+2.Update pod file google drive ,fabric<p/><p/>
+
+3.Fix ts bug<p/><p/>
+
+————————————————————————————<p/><p/>
+
+3.0.0a<p/><p/>
+
+1.Modify smart rul<p/><p/>
+
+2.Modify local search  smart rule<p/><p/>
+
+3.Modify security issue<p/><p/>
+
+4.Fix ts bug<p/>
+    </td>
+  </tr>
+  
+  <tr>
+  <td>
+  安裝說明<p/><p/>
+  安裝前，請先將前一版移除，再點擊"TSC Viewer"，進行安裝<p/><p/>
+  安裝完成後，須到手機設定->一般->裝置管理<p/>->“Edimax Technology Co., LTD."->點選信任<p/><p/>
+
+  </td>
+  </tr>
+</table>
+
+</body>
+</html>

@@ -33,13 +33,13 @@
 				<key>bundle-identifier</key>
 				<string>com.edimax.sensors</string>
 				<key>bundle-version</key>
-				<string>0.0.1a(20231205)</string>
+				<string>0.3a(20231215)</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>subtitle</key>
-				<string>AI-2005BE</string>
+				<string>Smart Sensor</string>
 				<key>title</key>
-				<string>AI-2005BE</string>
+				<string>Smart Sensor</string>
 			</dict>
 		</dict>
 	</array>
